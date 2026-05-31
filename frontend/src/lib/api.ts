@@ -24,7 +24,7 @@ export async function fetchAPI(
   const config: RequestInit = {
     ...options,
     headers,
-    // REMOVE credentials include
+    credentials: "include",
   };
 
   const response = await fetch(
